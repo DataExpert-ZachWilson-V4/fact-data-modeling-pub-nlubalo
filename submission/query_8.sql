@@ -4,7 +4,7 @@ INSERT INTO host_activity_reduced
 WITH yesterday AS (
     -- Subquery to get data for yesterday
     SELECT *
-    FROM nancyatienno21998.host_activity_reduced
+    FROM host_activity_reduced
     WHERE month_start = '2023-08-01'
 ),
 today AS (
@@ -14,7 +14,7 @@ today AS (
         metric_name,
         metric_value,
         date
-    FROM nancyatienno21998.daily_web_metrics
+    FROM daily_web_metrics
     WHERE Date = CAST('2023-08-02' AS DATE)
 )
 -- Main query to combine data from yesterday and today
