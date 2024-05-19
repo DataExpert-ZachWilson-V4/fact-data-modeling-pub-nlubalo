@@ -1,8 +1,8 @@
 -- Create a table named host_activity_reduced
-CREATE TABLE host_activity_reduced (
+CREATE TABLE nancyatienno21998.host_activity_reduced (
     host VARCHAR,
     metric_name VARCHAR
-    metric_arry ARRAY(INTEGER),
+    metric_array ARRAY(INTEGER),
     month_start VARCHAR
 )
 -- With options for table formatting and partitioning

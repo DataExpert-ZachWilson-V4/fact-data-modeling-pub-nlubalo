@@ -1,10 +1,10 @@
 -- Insert data into the table host_activity_reduced
-INSERT INTO host_activity_reduced
+INSERT INTO nancyatienno21998.host_activity_reduced
 -- Common Table Expressions (CTEs) to gather data for yesterday and today
 WITH yesterday AS (
     -- Subquery to get data for yesterday
     SELECT *
-    FROM host_activity_reduced
+    FROM nancyatienno21998.host_activity_reduced
     WHERE month_start = '2023-08-01'
 ),
 today AS (
