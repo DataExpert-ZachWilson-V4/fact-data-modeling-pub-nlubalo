@@ -20,7 +20,7 @@ WITH
         SUM(
           CASE
             -- If the date is in the active dates array, calculate the corresponding binary integer
-            WHEN CONTAINS(dates_active, sequence_date) THEN POW(2, 30 - DATE_DIFF('day', sequence_date, date))
+            WHEN CONTAINS(dates_active, sequence_date) THEN POW(2, 31 - DATE_DIFF('day', sequence_date, date))
             ELSE 0
           END
         ) AS BIGINT
