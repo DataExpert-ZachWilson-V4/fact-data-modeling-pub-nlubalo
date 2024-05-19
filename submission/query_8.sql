@@ -14,7 +14,7 @@ today AS (
         metric_name,
         metric_value,
         date
-    FROM daily_web_metrics
+    FROM bootcamp.daily_web_metrics
     WHERE Date = CAST('2023-08-02' AS DATE)
 )
 -- Main query to combine data from yesterday and today
